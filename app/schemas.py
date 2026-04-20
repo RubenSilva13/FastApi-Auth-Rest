@@ -1,5 +1,3 @@
-from xxlimited import Str
-
 from pydantic import BaseModel, EmailStr
 from datetime import datetime
 
@@ -7,7 +5,6 @@ class UserCreate(BaseModel):
     email: EmailStr
     username: str
     password: str
-
 
 class UserOut(BaseModel):
     id: int
@@ -24,7 +21,6 @@ class Token(BaseModel):
 class TokenData(BaseModel):
     username: str | None = None
 
-
 class TaskCreate(BaseModel):
     title: str
     description: str | None = None
@@ -32,7 +28,7 @@ class TaskCreate(BaseModel):
 
 class TaskOut(BaseModel):
     id: int
-    tittle: str
+    title: str
     description: str | None = None
     completed: bool
     priority: str
@@ -43,7 +39,7 @@ class TaskOut(BaseModel):
         from_attributes = True
 
 class TaskUpdate(BaseModel):
-    tittle: Str | None = None
+    title: str | None = None
     description: str | None = None
     completed: bool | None = None
     priority: str | None = None
