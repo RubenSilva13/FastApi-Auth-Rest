@@ -52,3 +52,14 @@ Com a API a correr, acede a http://127.0.0.1:8000/docs para ver a documentação
 | POST | /auth/register | Criar conta | Não |
 | POST | /auth/login | Login e obter token | Não |
 | GET | /auth/me | Ver perfil | Sim |
+
+### Tarefas
+| Método | Endpoint | Descrição | Auth |
+|--------|----------|-----------|------|
+| POST | /tasks/ | Criar tarefa | Sim |
+| GET | /tasks/ | Listar tarefas | Sim |
+| GET | /tasks/?completed=false | Filtrar por estado | Sim |
+| GET | /tasks/?priority=alta | Filtrar por prioridade | Sim |
+| GET | /tasks/{id} | Ver tarefa | Sim |
+| PUT | /tasks/{id} | Atualizar tarefa | Sim |
+| DELETE | /tasks/{id} | Apagar tarefa | Sim 
