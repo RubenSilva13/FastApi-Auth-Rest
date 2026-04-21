@@ -19,9 +19,19 @@ def create_task(task: schemas.TaskCreate, db: Session = Depends(get_db), current
     return new_task
 
 @router.get("/", response_model=list[schemas.TaskOut])
-def get_tasks(db: Session = Depends(get_db), current_user=Depends(auth.get_current_user)):
-    tasks = db.query(models.Task).filter(models.Task.owner_id == current_user.id).all()
-    return tasks
+def get_tasks(
+    completed: bool | None = None,
+    priority: str | None = None,
+    db: Session = Depends(get_db),
+    current_user=Depends(auth.get_current_user)
+):
+    query = db.query(models.Task).filter(models.Task.owner_id == current_user.id)
+    if completed is not None:
+        query = query.filter(models.Task.completed == completed)
+    if priority is not None:
+        query = query.filter(models.Task.priority == priority)
+    return query.all(
+)
 
 @router.get("/{task_id}", response_model=schemas.TaskOut)
 def get_task(task_id: int, db: Session = Depends(get_db), current_user=Depends(auth.get_current_user)):
