@@ -1,5 +1,10 @@
 # FastAPI Auth REST
 
+## API em produção
+Base URL: https://fastapi-auth-rest-production.up.railway.app
+
+Documentação interativa: https://fastapi-auth-rest-production.up.railway.app/docs
+
 API REST com autenticação JWT construída com FastAPI e MySQL.
 
 ## Tecnologias
