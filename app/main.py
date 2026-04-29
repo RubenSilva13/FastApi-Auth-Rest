@@ -10,7 +10,7 @@ app = FastAPI(title="Minha API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://fastapi-auth-react.vercel.app"],
+    allow_origins=["http://localhost:3000", "https://fastapi-auth-react-2f6h.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
