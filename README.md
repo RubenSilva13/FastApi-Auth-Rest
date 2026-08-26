@@ -8,9 +8,9 @@ API REST com autenticação JWT e gestão de tarefas, construída com FastAPI e 
 ![JWT](https://img.shields.io/badge/JWT-000000?style=flat&logo=jsonwebtokens&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
-<img width="1903" height="655" alt="Captura de ecrã 2026-08-26 171342" src="https://github.com/user-attachments/assets/0f472e2a-43ea-4daf-a241-cb568db588ca" />
+
 <img width="1905" height="904" alt="Captura de ecrã 2026-08-26 171325" src="https://github.com/user-attachments/assets/96035608-d434-4684-ac26-4f894570e8ed" />
-<img width="1919" height="1079" alt="Captura de ecrã 2026-08-26 171213" src="https://github.com/user-attachments/assets/ace41ac5-ab22-478d-b772-168adc3b94da" />
+<img width="1903" height="655" alt="Captura de ecrã 2026-08-26 171342" src="https://github.com/user-attachments/assets/0f472e2a-43ea-4daf-a241-cb568db588ca" />
 
 ## 🛠️ Tecnologias
 
